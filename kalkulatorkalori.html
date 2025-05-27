@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NutriCheck - Kalkulator Kalori</title>
+<link rel="stylesheet" href="kalkulator.css">
+</head>
+<body>
+ <header>
+  <div class="logo">🍎 NutriCheck</div>
+  <nav>
+   <a href="/src/projekakhir/home.html">Home</a>
+   <a href="/src/projekakhir/nutrisi.html">Nutrisi</a>
+   <a href="/src/projekakhir/kalkulatorkalori.html">Kalkulator Kalori</a>
+   <a href="/src/projekakhir/tips.html">Tips Gizi</a>
+   <a href="/src/projekakhir/peringatan.html">Peringatan Kesehatan</a>
+   <a href="#">Mengelola Makanan</a>
+  </nav>
+ </header>
+
+ <section class="hero">
+  <h1>Hitung Kebutuhan Kalori Anda</h1>
+ </section>
+
+ <div class="container" id="form-container">
+  <form id="kaloriForm">
+   <div class="form-group">
+    <label for="gender">Jenis Kelamin : </label>
+    <select id="gender" required>
+     <option value="">--Pilih--</option>
+     <option value="pria">Pria</option>
+     <option value="wanita">Wanita</option>
+    </select>
+   </div>
+   <div class="form-group">
+    <label for="age">Usia :</label>
+    <input type="number" id="age" required />
+   </div>
+   <div class="form-group">
+    <label for="height">Tinggi Badan (cm) : </label>
+    <input type="number" id="height" required />
+   </div>
+   <div class="form-group">
+    <label for="weight">Berat Badan (kg) : </label>
+    <input type="number" id="weight" required />
+   </div>
+   <div class="form-group">
+    <label for="activity">Aktivitas Fisik : </label>
+    <select id="activity" required>
+     <option value="">--Pilih--</option>
+     <option value="1.2">Ringan</option>
+     <option value="1.55">Sedang</option>
+     <option value="1.9">Berat</option>
+    </select>
+   </div>
+  </form>
+ </div>
+
+ <div class="button-outside-form">
+  <button type="button" id="hitungKaloriBtn">Hitung Kalori</button>
+ </div>
+
+ <table class="result-table" id="resultTable">
+  <colgroup>
+   <col style="width: 40%;"> <col style="width: 60%;">
+  </colgroup>
+  <thead>
+   <tr>
+    <th>Parameter</th>
+    <th>Nilai</th>
+   </tr>
+  </thead>
+  <tbody id="resultBody"></tbody>
+ </table>
+
+<div class="top-banner">
+    Yuk hitung kalori makananmu!<br>
+    <span class="main-button">Mau Makan Apa?</span>
+  </div>
+
+  <h1>Hitung Kalori Makan</h1>
+
+  
+  <div class="scroll-container">
+    <div class="menu-scroll">
+
+      <div class="menu-item" data-kalori="130">
+        <img src="/src/projekakhir/gambar/nasi.png" alt="Nasi">
+        <div class="menu-text">Nasi Putih<br>130 kkal</div>
+      </div>
+      <div class="menu-item" data-kalori="225">
+        <img src="/src/projekakhir/gambar/ayamgoreng.png" alt="Ayam">
+        <div class="menu-text">Ayam Goreng<br>225 kkal</div>
+      </div>
+      <div class="menu-item" data-kalori="60">
+        <img src="/src/projekakhir/gambar/kangkung.png" alt="Kangkung">
+        <div class="menu-text">Kangkung<br>60 kkal</div>
+      </div>
+      <div class="menu-item" data-kalori="60">
+        <img src="/src/projekakhir/gambar/esteh.png" alt="Teh">
+        <div class="menu-text">Teh Manis<br>60 kkal</div>
+      </div>
+      <div class="menu-item" data-kalori="150">
+        <img src="/src/projekakhir/gambar/tahuisi.png" alt="Tahu">
+        <div class="menu-text">Tahu Isi<br>150 kkal</div>
+      </div>
+      <div class="menu-item" data-kalori="130">
+        <img src="/src/projekakhir/gambar/bakwan.png" alt="Bakwan">
+        <div class="menu-text">Bakwan<br>130 kkal</div>
+      </div>
+      <div class="menu-item" data-kalori="28">
+        <img src="/src/projekakhir/gambar/bayam.png" alt="Bayam">
+        <div class="menu-text">Bayam<br>100 kkal</div>
+      </div>
+      <div class="menu-item" data-kalori="215">
+        <img src="/src/projekakhir/gambar/dagingsapi.png" alt="Daging Sapi">
+        <div class="menu-text">Daging Sapi<br>100 kkal</div>
+      </div>
+      <div class="menu-item" data-kalori="175">
+        <img src="/src/projekakhir/gambar/ikanbakar.png" alt="Ikan Bakar">
+        <div class="menu-text">Ikan Bakar<br>100 kkal</div>
+      </div>
+       <div class="menu-item"data-kalori="110">
+        <img src="/src/projekakhir/gambar/jusapel.png" alt="Jus Apel">
+        <div class="menu-text">Jus Apel<br>100 kkal</div>
+      </div>
+       <div class="menu-item" data-kalori="85">
+        <img src="/src/projekakhir/gambar/kerupukudang.png" alt="Kerupuk Udang">
+        <div class="menu-text">Kerupuk Udang<br>100 kkal</div>
+      </div>
+       <div class="menu-item" data-kalori="375">
+        <img src="/src/projekakhir/gambar/mieinstan.png" alt="Mie Instan">
+        <div class="menu-text">Mie Instan<br>100 kkal</div>
+      </div>
+       <div class="menu-item" data-kalori="110">
+        <img src="/src/projekakhir/gambar/nasimerah.png" alt="Nasi Merah">
+        <div class="menu-text">Nasi Merah<br>100 kkal</div>
+      </div>
+       <div class="menu-item" data-kalori="95">
+        <img src="/src/projekakhir/gambar/pisang.png" alt="Pisang">
+        <div class="menu-text">Pisang<br>100 kkal</div>
+      </div>
+       <div class="menu-item" data-kalori="135">
+        <img src="/src/projekakhir/gambar/tempe.png" alt="Tempe">
+        <div class="menu-text">Tempe<br>100 kkal</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-container">
+    <button class="btn-hitung">Hitung</button>
+  </div>
+
+
+   <h1 style="margin-left: 490px;">Total Kalori Kamu:</h1>
+
+<div class="content-wrapper">
+     
+
+        <div class="result-container">
+            <div class="result-kalori">0 Kkal</div>
+            <p class="result-description">
+                
+            </p>
+        </div>
+    </div>
+
+ <footer>
+  © 2025 NutrisiSehat | Kontak: info@nutrisisehat.com
+ </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("kaloriForm");
+    const hitungKaloriBtn = document.getElementById("hitungKaloriBtn");
+    const resultTable = document.getElementById("resultTable");
+    const resultBody = document.getElementById("resultBody");
+    const menuItems = document.querySelectorAll(".menu-item");
+    const btnHitungMakanan = document.querySelector(".btn-hitung");
+    const resultKaloriDiv = document.querySelector(".result-kalori");
+    const description = document.querySelector(".result-description");
+
+    let totalKalori = 0;
+    let kebutuhanKaloriGlobal = null;
+
+
+    hitungKaloriBtn.addEventListener("click", function () {
+      if (!form.reportValidity()) return;
+
+      const gender = document.getElementById("gender").value;
+      const age = parseInt(document.getElementById("age").value);
+      const height = parseFloat(document.getElementById("height").value);
+      const weight = parseFloat(document.getElementById("weight").value);
+      const activity = parseFloat(document.getElementById("activity").value);
+
+      let bmr = 0;
+      if (gender === "pria") {
+        bmr = 88.36 + (13.4 * weight) + (4.8 * height) - (5.7 * age);
+      } else {
+        bmr = 447.6 + (9.2 * weight) + (3.1 * height) - (4.3 * age);
+      }
+
+      const kebutuhanKalori = Math.round(bmr * activity);
+      kebutuhanKaloriGlobal = kebutuhanKalori;
+
+      resultBody.innerHTML = `
+        <tr><td>Jenis Kelamin</td><td>${gender.charAt(0).toUpperCase() + gender.slice(1)}</td></tr>
+        <tr><td>Usia</td><td>${age} Tahun</td></tr>
+        <tr><td>Tinggi Badan</td><td>${height} cm</td></tr>
+        <tr><td>Berat Badan</td><td>${weight} kg</td></tr>
+        <tr><td>Aktivitas Fisik</td><td>${activity === 1.2 ? "Ringan" : activity === 1.55 ? "Sedang" : "Berat"}</td></tr>
+        <tr><td>Kebutuhan Kalori</td><td class="highlight">${kebutuhanKalori.toLocaleString()} kkal/hari</td></tr>
+      `;
+
+      resultTable.style.display = "table";
+    });
+
+
+    menuItems.forEach(item => {
+      item.addEventListener("click", () => {
+        const kalori = parseInt(item.getAttribute("data-kalori"));
+        if (item.classList.contains("selected")) {
+          totalKalori -= kalori;
+          item.classList.remove("selected");
+        } else {
+          totalKalori += kalori;
+          item.classList.add("selected");
+        }
+      });
+    });
+
+    btnHitungMakanan.addEventListener("click", () => {
+      resultKaloriDiv.textContent = `${totalKalori} Kkal`;
+
+      if (kebutuhanKaloriGlobal === null) {
+        description.textContent = "Isi dulu dong formnya biar kami tau kebutuhan kalorimu.";
+      } else if (totalKalori > kebutuhanKaloriGlobal) {
+        description.textContent = "Yakin mau makan segini?";
+      } else if (totalKalori < kebutuhanKaloriGlobal) {
+        description.textContent = "Ayo makan lebih banyak!";
+      } else {
+        description.textContent = "Pas banget nih dengan kebutuhan kamu!";
+      }
+    });
+
+    window.addEventListener("load", () => {
+      totalKalori = 0;
+      resultKaloriDiv.textContent = "0 Kkal";
+      menuItems.forEach(item => item.classList.remove("selected"));
+    });
+  });
+</script>
+
+  
+</body>
+</html>
