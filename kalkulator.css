@@ -111,20 +111,20 @@ body {
         #hitungKaloriBtn {
             padding: 10px 20px;
             font-size: 18px;
-            background-color: #ff7052; /* Warna awal */
+            background-color: #ff7052;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: transform 0.3s ease, background-color 0.2s ease; /* Transisi untuk efek */
+            transition: transform 0.3s ease, background-color 0.2s ease;
         }
 
         #hitungKaloriBtn:hover {
-            transform: scale(1.1); /* Membesar 10% saat di-hover */
+            transform: scale(1.1); 
         }
 
         #hitungKaloriBtn:active {
-            background-color: #ff0000; /* Warna saat dipencet */
+            background-color: #ff0000;
         }
 
  .result-table {
@@ -257,24 +257,24 @@ h1 {
         }
 
         .btn-hitung {
-            padding: 12px 25px; /* Sedikit lebih besar untuk tombol */
+            padding: 12px 25px; 
             font-size: 19px;
-            background-color: #ff5b4d; /* Warna biru standar */
+            background-color: #ff5b4d; 
             color: white;
             border: none;
-            border-radius: 7px; /* Sedikit lebih melengkung */
+            border-radius: 7px;
             cursor: pointer;
-            transition: transform 0.3s ease, background-color 0.2s ease; /* Transisi untuk efek */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sedikit bayangan */
+            transition: transform 0.3s ease, background-color 0.2s ease; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
         }
 
         .btn-hitung:hover {
-            transform: scale(1.08); /* Membesar 8% saat di-hover */
+            transform: scale(1.08); 
         }
 
         .btn-hitung:active {
-            background-color: #ff0000; /* Warna biru yang lebih gelap saat dipencet */
-            transform: scale(1.05); /* Sedikit mengecil saat dipencet */
+            background-color: #ff0000; 
+            transform: scale(1.05); 
         }
 
 
