@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriCheck - Mengelola Makanan</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #fff1dc;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(to right, #ffe600, #ff7043);
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .logo {
+            font-size: 24px; 
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            gap: 8px; 
+            color: white; 
+        }
+
+        .logo img {
+            height: 30px; 
+            width: auto;
+            vertical-align: middle;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/gambar/latarbelakang.png') center/cover no-repeat;
+            height: 100px;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 32px;
+            margin: 0;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+        }
+
+       
+        .tips-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+            max-width: 960px; 
+            margin: 20px auto; 
+            box-sizing: border-box;
+        }
+
+        .tip-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            text-align: left;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .tip-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .tip-card h2 {
+            color: #ff7043;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .tip-card p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            margin-top: auto;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+     <div class="logo">🍎 NutriCheck</div>
+        <nav>
+            <a href="/home.html">Home</a>
+            <a href="/nutrisi.html">Nutrisi</a>
+            <a href="/kalkulatorkalori.html">Kalkulator Kalori</a>
+            <a href="/tips.html">Tips Gizi</a>
+            <a href="/peringatan.html">Peringatan Kesehatan</a>
+            <a href="/mengelola.html">Mengelola Makanan</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Cara Mengelola Makanan</h1>
+    </section>
+
+    <section class="tips-section">
+        <div class="tip-card">
+            <h2>Rencanakan Menu Mingguan</h2>
+            <p>Buat daftar menu yang seimbang untuk satu minggu agar kamu tidak sembarangan memilih makanan.</p>
+        </div>
+        <div class="tip-card">
+            <h2>Utamakan Bahan Segar</h2>
+            <p>Pilih buah, sayur, protein tanpa lemak, dan biji-bijian utuh sebagai bahan utama masakanmu.</p>
+        </div>
+        <div class="tip-card">
+            <h2>Gunakan Metode Masak Sehat</h2>
+            <p>Kukus, rebus, panggang, atau tumis dengan sedikit minyak daripada menggoreng.</p>
+        </div>
+        <div class="tip-card">
+            <h2>Kurangi Gula & Garam</h2>
+            <p>Gunakan rempah-rempah alami sebagai pengganti garam atau MSG, dan batasi penggunaan gula tambahan.</p>
+        </div>
+        <div class="tip-card">
+            <h2>Edukasi Diri</h2>
+            <p>Baca label nutrisi pada produk makanan dan terus belajar tentang gizi seimbang.</p>
+        </div>
+        <div class="tip-card">
+            <h2>Perhatikan Porsi</h2>
+            <p>Gunakan piring makan sehat (½ sayur & buah, ¼ protein, ¼ karbohidrat) untuk membantu kontrol porsi.</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 NutrisiSehat | Kontak: info@nutrisisehat.com
+    </footer>
+</body>
+</html>

@@ -35,7 +35,7 @@ body {
  }
 
  .hero {
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/src/projekakhir/gambar/latarbelakang.png) center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/gambar/latarbelakang.png) center/cover no-repeat;
   height: 100px;
   padding: 0 20px;
   display: flex;
@@ -101,6 +101,31 @@ body {
   margin: 20px auto;
   text-align: center;
  }
+
+ .button-outside-form {
+            max-width: 500px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        #hitungKaloriBtn {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ff7052; /* Warna awal */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.2s ease; /* Transisi untuk efek */
+        }
+
+        #hitungKaloriBtn:hover {
+            transform: scale(1.1); /* Membesar 10% saat di-hover */
+        }
+
+        #hitungKaloriBtn:active {
+            background-color: #ff0000; /* Warna saat dipencet */
+        }
 
  .result-table {
   display: none;
@@ -226,24 +251,31 @@ h1 {
   line-height: 1.4;
 }
 
-.btn-container {
-  text-align: center;
-  margin-bottom: 50px;
-}
+ .btn-container {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-.btn-hitung {
-  padding: 10px 25px;
-  background-color: #ff7052;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  font-size: 15px;
-  cursor: pointer;
-}
+        .btn-hitung {
+            padding: 12px 25px; /* Sedikit lebih besar untuk tombol */
+            font-size: 19px;
+            background-color: #ff5b4d; /* Warna biru standar */
+            color: white;
+            border: none;
+            border-radius: 7px; /* Sedikit lebih melengkung */
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.2s ease; /* Transisi untuk efek */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sedikit bayangan */
+        }
 
-.btn-hitung:hover {
-  background-color: #ff5733;
-}
+        .btn-hitung:hover {
+            transform: scale(1.08); /* Membesar 8% saat di-hover */
+        }
+
+        .btn-hitung:active {
+            background-color: #ff0000; /* Warna biru yang lebih gelap saat dipencet */
+            transform: scale(1.05); /* Sedikit mengecil saat dipencet */
+        }
 
 
 
