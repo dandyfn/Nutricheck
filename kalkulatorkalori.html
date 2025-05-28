@@ -235,12 +235,12 @@
 
       if (kebutuhanKaloriGlobal === null) {
         description.textContent = "Isi dulu dong formnya biar kami tau kebutuhan kalorimu😀";
-      } else if (totalKalori > kebutuhanKaloriGlobal) {
+      } else if (totalKalori > kebutuhanKaloriGlobal + 30) {
         description.textContent = "Yakin mau makan segini?😱";
-      } else if (totalKalori < kebutuhanKaloriGlobal) {
+      } else if (totalKalori < kebutuhanKaloriGlobal - 30) {
         description.textContent = "Ayo makan lebih banyak!🫥";
       } else {
-        description.textContent = "Pas banget nih dengan kebutuhan kamu!🤠";
+        description.textContent = "Pas banget nih dengan kebutuhan kamu!🤠 karena kebutuhan kalori kamu ada di sekitar " + kebutuhanKaloriGlobal + " kkal";
       }
     });
 
